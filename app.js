@@ -14,6 +14,8 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
+console.log('DB Connection : ' + config.database);
+
 // Database Connection
 mongoose.connect(config.database)
   .then(() =>  console.log('DB connection succesful'))
