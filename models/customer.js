@@ -1,9 +1,10 @@
 var mongoose = require('mongoose');
 
 var CustomerSchema = new mongoose.Schema({
-  cust_name: String,
-  cust_title: String,
-  cust_dob: Date,
+  firstname: String,
+  lastname: String,    
+  title: String,
+  job: String,
   updated_at: { type: Date, default: Date.now },
 });
 

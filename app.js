@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
+var config = require('./config/main');
 var index = require('./routes/index');
 var customers = require('./routes/customer');
 
@@ -13,8 +14,9 @@ var app = express();
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/customer')
-  .then(() =>  console.log('connection succesful'))
+// Database Connection
+mongoose.connect(config.database)
+  .then(() =>  console.log('DB connection succesful'))
   .catch((err) => console.error(err));
 
 // view engine setup
