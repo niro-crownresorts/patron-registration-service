@@ -10,6 +10,7 @@
     "npm": "3.10.9"
   },
   "dependencies": {
+    "@google-cloud/debug-agent": "^1.0.0",
     "body-parser": "~1.16.0",
     "cookie-parser": "~1.4.3",
     "debug": "~2.6.0",

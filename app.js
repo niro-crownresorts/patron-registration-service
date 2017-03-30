@@ -12,6 +12,10 @@ var customers = require('./routes/customer');
 
 var app = express();
 
+// Require and start in the startup of your application:
+require('@google-cloud/debug-agent').start({ allowExpressions: true });
+// No auth necessary if your code is running on Google Cloud Platform.
+
 mongoose.Promise = global.Promise;
 
 console.log('DB Connection : ' + config.database);
