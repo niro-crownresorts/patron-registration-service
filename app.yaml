@@ -1,4 +1,6 @@
 # [START app_yaml]
 runtime: nodejs
 env: flex
+env_variables:
+   MONGODB_URI: 'mongodb://heroku_ms13kdx0:d98vam702tluo5qrul95rfmsm2@ds133340.mlab.com:33340/heroku_ms13kdx0'
 # [END app_yaml]
